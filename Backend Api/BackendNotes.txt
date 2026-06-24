@@ -1,0 +1,53 @@
+middleware : cycle of request from frontend and response from server 
+
+first create two files Server.js and app.js
+
+then run cmd npm init -y 
+
+then in the package.json 
+
+in scripts
+
+"dev":"nodemon server"
+
+install express package "npm i express "
+
+fr package.json mein jake type ko krna hai module 
+
+then file create kro .env and then package install kro npm i dotenv
+
+then connect to the database using mongodb atlas and create server  :- {
+
+phla server bnana fr database naal connect krna 
+
+1. 
+server bnana :- ode lai phla express nu aquire kro then app de vich then onu export krke server ch import krlo fr port naam da variable bna ke port number env file ch rkho te process.env naal onu leke aao but ede lai phla dotenv package hona chahida(onu app wali file ch dotenv.config() krna ) fr app .listen lgao te server bnao 
+
+2. 
+database connect krna :- phla config folder bnao ode ch db.js name di file bnao ode ch mongoose nu aquire kro 
+fr async await aala function bnao ode andr try catch lgao mongooe.connect(andr likho mongo url jo env de andr aa )
+}
+ 
+then apply the cors methods {
+cors package install kro then usko call kro app.use ke andr 
+}
+ 
+req and res from backend {
+first create a schema for database model
+mongoose aquire kro then jis bhi data ka schema bnana hai jaise ki authschema uske name ka function bnao 
+or new mongoose.schema krke uske andr ke fileds likh do 
+}
+
+ 
+
+there is folder structure of backend :-
+
+there should always create 3 folder
+
+1. Controllers :- used for write the buissness logics  
+2. Model :- create database model
+3. Routes :- for routes 
+
+
+
+
